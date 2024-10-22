@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import WeatherInfo from './components/WeatherInfo';
+import WeatherSummary from './components/WeatherSummary';
 
 function App() {
   const [weatherData, setWeatherData] = useState(null);
@@ -32,6 +33,7 @@ function App() {
       <SearchBar setCity={setCity} />
       <div className="weather-container">
         <WeatherInfo weatherData={weatherData} unit={unit} convertTemp={convertTemp} />
+        <WeatherSummary weatherData={weatherData} unit={unit} convertTemp={convertTemp} />
       </div>
     </div>
   );
