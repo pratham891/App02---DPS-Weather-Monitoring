@@ -82,7 +82,32 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000;
   margin: 10px;
   /* width: calc(33.333% - 40px); */
   box-sizing: border-box;
+}
+
+.boxes {
+  display: flex;
+}
+
+.box {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .boxes {
+    flex-direction: column;
+  }
+}
+
+#root>div>div.weather-container>div.weather-summary>h5 {
+  font-size: larger;
+  margin: 0;
+}
+
+#root>div>div.weather-container>div.weather-forecast>h5 {
+  font-size: larger;
+  margin: 0;
 }
