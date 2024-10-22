@@ -3,6 +3,7 @@ import './App.css';
 import SearchBar from './components/SearchBar';
 import WeatherInfo from './components/WeatherInfo';
 import WeatherSummary from './components/WeatherSummary';
+import WeatherForecast from './components/WeatherForecast';
 
 function App() {
   const [weatherData, setWeatherData] = useState(null);
@@ -34,6 +35,7 @@ function App() {
       <div className="weather-container">
         <WeatherInfo weatherData={weatherData} unit={unit} convertTemp={convertTemp} />
         <WeatherSummary weatherData={weatherData} unit={unit} convertTemp={convertTemp} />
+        <WeatherForecast weatherData={weatherData} unit={unit} convertTemp={convertTemp} />
       </div>
     </div>
   );
