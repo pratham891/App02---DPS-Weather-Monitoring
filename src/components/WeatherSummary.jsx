@@ -11,9 +11,9 @@ const WeatherSummary = ({ weatherData, unit, convertTemp }) => {
   return (
     <div className="weather-summary">
       <h5>Weather Summary</h5>
-      <div className="temp-avg">Avg Temp: {convertTemp(avgTemp, unit)}°{unit}</div>
-      <div className="temp-min">Min Temp: {convertTemp(temp_min, unit)}°{unit}</div>
-      <div className="temp-max">Max Temp: {convertTemp(temp_max, unit)}°{unit}</div>
+      <div className="temp-avg">Avg Temp: {convertTemp(avgTemp, unit)}° {unit}</div>
+      <div className="temp-min">Min Temp: {convertTemp(temp_min, unit)}° {unit}</div>
+      <div className="temp-max">Max Temp: {convertTemp(temp_max, unit)}° {unit}</div>
     </div>
   );
 };

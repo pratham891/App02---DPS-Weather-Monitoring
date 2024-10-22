@@ -26,9 +26,9 @@ function App() {
     <div className="App">
       <div id="dropdown" style={{ marginBottom: "10px" }} >
         <select onChange={e => setUnit(e.target.value)} value={unit} className="dropkey">
-          <option value="metric">°Celsius</option>
-          <option value="standard">Kelvin</option>
-          <option value="imperial">°Fahrenheit</option>
+          <option value="metric">°Celsius (metric)</option>
+          <option value="standard">Kelvin (standard)</option>
+          <option value="imperial">°Fahrenheit (imperial)</option>
         </select>
       </div>
       <SearchBar setCity={setCity} />
